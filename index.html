@@ -6,7 +6,204 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header>
+    <div class="container">
+      <div class="top-header">
+        <!-- абс позиционирование для лого -->
+        <h1 class="logo"><a class="logo-header">Device</a></h1>
+        <div class="search">
+          <form action="#" method="get">
+            <label for="search" class="search-label">
+            <input type="text" class="search-input" name="search" id="search" placeholder="Поиск по сайту">
+            <!-- эту кнопку норм спаном? и потом прятать дисплей-блоком? -->
+            <span>Найти</span>
+            </label>
+          </form>
+        </div>
+        <!-- мелкие картинки (лупа, корзина ипр) — иконочным шрифтом, псевдоэлементами? -->
+        <div class="user-block">
+          <a class="login" href="#">Войти</a>
+        </div>
+
+        <div class="compare">
+          <a href="#">Сравнить</a>
+        </div>
+
+        <div class="basket">
+          <a href="#">Корзина</a>
+        </div>
+      </div>
+
+    <div class="main-header">
+
+        <div class="main-menu">
+          <nav>
+            <ul>
+              <li><a href="catalog.html">Каталог товаров</a>
+                <!-- этот блок абс позиц и прячется дисплей ноном, потом проявляется жсом? -->
+                <ul class="catalog-assortment">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Фитнесс браслеты</a></li>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                  <!-- тут лесенкой пункты. лучше 6й пустой сделать или 5-му прописать большой маргин-райт? -->
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+
+  </div>
+  </header>
+
+    <main>
+      <section class="slider slider-1">
+        <div class="container">
+
+        <div class="slider-picture">
+          <img src="#" alt="">
+        </div>
+        <div class="slider-text">
+          <div class="slider-number">01
+            <!-- забыла, тут нужен спан для 01? a черточку можно сделать псевдоэлементом вроде?  -->
+          </div>
+          <!-- если у логотипа внизу h2, то у всех заголовков на странице уже надо использовать h3? или норм h2?  -->
+          <h2>Делай селфи, как Бен Стиллер!</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <div class="">
+            <a href="#">Подробнее</a>
+            <div>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="details">
+            <div>
+              <span class="details-value">8.5 м</span>
+              <span class="details-parameter">Длина палки</span>
+            </div>
+            <div>
+              <span class="details-value">5 кг</span>
+              <span class="details-parameter">Вес палки</span>
+            </div>
+            <div>
+              <span class="details-value">Карбон</span>
+              <span class="details-parameter">Материал</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        <!--  ЕЩЕ 2 СЛАЙДА -->
+      </section>
+      <section class="popular">
+        <div class="container">
+
+        <ul>
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнесс браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </div>
+      </section>
+
+      <section class="services services-credit">
+        <div class="container">
+
+        <div class="services-menu">
+          <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li class="active"><a href="#">Кредит</a></li>
+          </ul>
+        </div>
+        <div class="services-text">
+          <h2>Кредит</h2>
+          <p>Залезть в долговую яму стало проще! Кредитные консультатнты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
+        <!--  ЕЩЕ 2 СЕРВИСА -->
+      </div>
+      </section>
+
+      <section class="brands">
+        <div class="container">
+
+        <a href="#"><img src="#" alt="dji"></a>
+        <a href="#"><img src="#" alt="spgadjets"></a>
+        <a href="#"><img src="#" alt="gopro"></a>
+        <a href="#"><img src="#" alt="vive"></a>
+      </div>
+      </section>
+
+      <section class="info">
+        <div class="container">
+
+        <div class="about">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить наш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="btn btn-about" href="#">Подробнее о нас</a>
+        </div>
+        <div class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="map" href="#"><img src="img/map.png" width="560" height="224" alt="map"></a>
+          <a class="btn btn-write" href="#">Напишите нам</a>
+        </div>
+      </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <h2 class="logo"><a class="logo-footer" href="index.html">Device</a></h2>
+          <div class="footer-user-block">
+          <a class="login" href="#">Войти</a>
+          <a href="#">Сравнить</a>
+          <a href="#">Корзина</a>
+          </div>
+        </div>
+
+        <div class="middle-footer">
+          <div class="address"><span>г. Москва, ул. Строителей, 15</span></div>
+          <div class="footer-menu">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="phone"><span>Тел.: +7 (495) 495-95-95</span></div>
+
+        </div>
+
+        <div class="bottom-footer">
+          <div class="dash"></div>
+          <div class="social">
+            <a class="social-facebook" href="#"></a>
+            <a class="social-instagram" href="#"></a>
+            <a class="social-twitter" href="#"></a>
+          </div>
+          <div class="design-logo">
+            <a href="#"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
