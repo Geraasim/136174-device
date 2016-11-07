@@ -3,22 +3,109 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet"> -->
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
 
-    <header></header>
+    <header>
+    <div class="container">
+      <div class="top-header">
+        <!-- абс позиционирование для лого -->
+        <h2 class="logo"><a href="index.html" class="logo-header">Device</a></h2>
+        <ul>
+
+        <li class="search">
+          <form action="#" method="get">
+            <label for="search" class="search-label">
+            <input type="text" class="search-input" name="search" id="search" placeholder="Поиск по сайту">
+          </label>
+
+            <!-- эту кнопку норм спаном? и потом прятать дисплей-блоком? -->
+            <button type="submit">Найти</button>
+          </form>
+        </li>
+        <!-- мелкие картинки (лупа, корзина ипр) — иконочным шрифтом, псевдоэлементами? -->
+        <li class="user-block">
+            <a class="name" href="#">Валентин Петухов <span>Выйти</span></a>
+            <!-- <a class="logout" href="#">Выйти</a> -->
+        </li>
+
+        <li class="compare">
+          <a href="#">Сравнить</a>
+        </li>
+
+        <li class="basket">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      </div>
+
+      <div class="main-header">
+
+          <!-- <div class="main-menu"> -->
+            <nav>
+              <ul class="main-menu">
+                <li class="main-menu-catalog"><a href="catalog.html">Каталог товаров <span></span></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Фитнесс браслеты</a></li>
+                    <li><a href="#">Квадрокоптеры</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                    <!-- тут лесенкой пункты. лучше 6й пустой сделать или 5-му прописать большой маргин-райт? -->
+                    <li><a href="#">Экшн-камеры</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu-delivery"><a href="#">Доставка</a></li>
+                <li class="main-menu-waranty"><a href="#">Гарантия</a></li>
+                <li class="main-menu-contacts"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+        <!-- </div> -->
+      </div>
+
+  </div>
+  </header>
 
     <main>
+      <div class="container">
+
       <h1>Моноплоды для селфи</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
         <li>Моноплоды для селфи</li>
       </ul>
+    </div>
+
+      <div class="monoplods">
+        <div class="container">
+          <div class="top-row">
+          <h2>Фильтр:</h2>
+
+          <div class="sorting">
+            <h2>Сортировка:</h2>
+            <ul class="sorting-type">
+              <li><a class="active" href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По популярности</a></li>
+            </ul>
+            <ul class="up-down">
+              <li><a href="#"><span class="icon-up-dir"></span></a></li>
+              <li><a href="#"><span class="icon-down-dir active"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="monoplods-content">
       <section class="filter">
         <form>
 
-            <h2>Фильтр:</h2>
+
             <div class="filter-cost">
               <h3>Стоимость</h3>
 
@@ -49,17 +136,17 @@
 
             <div class="filter-color">
 
-            <h3>Цвет</h3>
-            <input type="checkbox" checked name="color" id="black">
-            <label for="black">Черный</label>
-            <input type="checkbox" name="color" id="white">
-            <label for="white">Белый</label>
-            <input type="checkbox" checked name="color" id="blue">
-            <label for="blue">Синий</label>
-            <input type="checkbox" checked name="color" id="red">
-            <label for="red">Красный</label>
-            <input type="checkbox" name="color" id="pink" disabled>
-            <label for="pink">Розовый</label>
+              <h3>Цвет</h3>
+              <input type="checkbox" checked name="color" id="black">
+              <label for="black">Черный</label>
+              <input type="checkbox" name="color" id="white">
+              <label for="white">Белый</label>
+              <input type="checkbox" checked name="color" id="blue">
+              <label for="blue">Синий</label>
+              <input type="checkbox" checked name="color" id="red">
+              <label for="red">Красный</label>
+              <input type="checkbox" name="color" id="pink" disabled>
+              <label for="pink">Розовый</label>
             </div>
 
             <div class="filter-bluetooth">
@@ -72,21 +159,10 @@
             <button type="submit">Показать</button>
 
         </form>
-
       </section>
+
       <section class="catalog">
-        <div class="sorting">
-          <h2>Сортировка:</h2>
-          <ul class="sorting-type">
-            <li><a class="active" href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По популярности</a></li>
-          </ul>
-          <ul class="up-down">
-            <li><a href="#"><span class="icon-up-dir"></span></a></li>
-            <li><a href="#"><span class="icon-down-dir active"></span></a></li>
-          </ul>
-        </div>
+        <div class="goods">
         <article>
           <img src="#" alt="" width="360" height="380">
           <h1>Любительская селфи-палка</h1>
@@ -107,7 +183,7 @@
           <h1>Селфи-палка «Следуй за мной»</h1>
           <span>4900 руб.</span>
         </article>
-
+      </div>
         <div class="paginator">
           <a class="previous" href="#">Назад</a>
           <ul>
@@ -118,9 +194,9 @@
           <a class="next" href="#">Вперед</a>
         </div>
       </section>
-
-
-
+    </div>
+    </div>
+  </div>
 
     </main>
 
@@ -128,20 +204,20 @@
       <div class="container">
         <div class="top-footer">
           <h2 class="logo"><a class="logo-footer" href="index.html">Device</a></h2>
-          <div class="footer-user-block">
-          <a class="login" href="#">Войти</a>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
-          </div>
+          <ul class="footer-user-block">
+          <li><a class="login" href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
         </div>
 
         <div class="middle-footer">
           <div class="address"><span>г. Москва, ул. Строителей, 15</span></div>
-          <div class="footer-menu">
-            <a href="#">Доставка</a>
-            <a href="#">Гарантия</a>
-            <a href="#">Контакты</a>
-          </div>
+          <ul class="footer-menu">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
           <div class="phone"><span>Тел.: +7 (495) 495-95-95</span></div>
 
         </div>
