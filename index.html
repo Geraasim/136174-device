@@ -21,9 +21,9 @@
 
         <li class="search">
           <form action="#" method="get">
-            <label for="search" class="search-label">
-            <input type="text" class="search-input" name="search" id="search" placeholder="Поиск по сайту">
-          </label>
+
+            <input type="search" class="search-input" name="search" id="search" placeholder="Поиск по сайту">
+            <label for="search" class="search-label"></label>
 
             <!-- эту кнопку норм спаном? и потом прятать дисплей-блоком? -->
             <button type="submit">Найти</button>
@@ -49,13 +49,12 @@
         <!-- <div class="main-menu"> -->
           <nav>
             <ul class="main-menu">
-              <li class="main-menu-catalog"><a href="catalog.html">Каталог товаров <span></span></a>
-                <!-- этот блок абс позиц и прячется дисплей ноном, потом проявляется жсом? -->
+              <li class="main-menu-catalog"><a href="#">Каталог товаров <span></span></a>
                 <ul class="sub-menu">
                   <li><a href="#">Виртуальная реальность</a></li>
                   <li><a href="#">Фитнесс браслеты</a></li>
                   <li><a href="#">Квадрокоптеры</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
                   <li><a href="#">Умные часы</a></li>
                   <!-- тут лесенкой пункты. лучше 6й пустой сделать или 5-му прописать большой маргин-райт? -->
                   <li><a href="#">Экшн-камеры</a></li>
@@ -77,7 +76,7 @@
         <div class="container">
 
         <div class="slider-picture">
-          <img src="img/slider-1.png" width="384" height="486" alt="">
+          <img src="img/slider-1.png" width="384" height="486" alt="selfie-stick">
         </div>
         <div class="slider-text">
           <div class="slider-number">01
@@ -88,7 +87,7 @@
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <div class="more">
             <a href="#">Подробнее</a>
-            <div>
+            <div class="indicators">
               <span class="active"></span>
               <span></span>
               <span></span>
@@ -109,24 +108,139 @@
             </li>
           </ul>
           </div>
-
         </div>
-        <!--  ЕЩЕ 2 СЛАЙДА -->
+      </section>
+      <section class="slider slider-2">
+        <div class="container">
+        <div class="slider-picture">
+          <img src="img/slider-2.png" width="345" height="485" alt="fitness-bracelet">
+        </div>
+        <div class="slider-text">
+          <div class="slider-number">02
+          </div>
+          <h2>Худеем<br>правильно!</h2>
+          <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <div class="more">
+            <a href="#">Подробнее</a>
+            <div class="indicators">
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="details-value">48 часов</span>
+              <span class="details-parameter">Без подзарядки</span>
+            </li>
+            <!-- <li> -->
+              <!-- <span class="details-value"></span> -->
+              <!-- <span class="details-parameter"></span> -->
+            <!-- </li> -->
+            <!-- <li> -->
+              <!-- <span class="details-value">Карбон</span> -->
+              <!-- <span class="details-parameter">Материал</span> -->
+            <!-- </li> -->
+          </ul>
+          </div>
+        </div>
+      </section>
+      <section class="slider slider-3">
+        <div class="container">
+
+        <div class="slider-picture">
+          <img src="img/slider-3.png" width="526" height="334" alt="quadrocopter">
+        </div>
+        <div class="slider-text">
+          <div class="slider-number">03
+          </div>
+          <h2>Порхает как бабочка,<br>жалит как пчела!</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <div class="more">
+            <a href="#">Подробнее</a>
+            <div class="indicators">
+              <span></span>
+              <span></span>
+              <span class="active"></span>
+            </div>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="details-value">800 м</span>
+              <span class="details-parameter">Дальность полета</span>
+            </li>
+            <li>
+              <span class="details-value">50 м</span>
+              <span class="details-parameter">Радиус поражения</span>
+            </li>
+            <!-- <li> -->
+              <!-- <span class="details-value">Карбон</span> -->
+              <!-- <span class="details-parameter">Материал</span> -->
+            <!-- </li> -->
+          </ul>
+          </div>
+        </div>
       </section>
       <section class="popular">
         <div class="container">
-
         <ul>
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнесс браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
+          <li><a href="#">
+            <div class="popular-picture">
+              <div class="picture-logo picture-1"></div>
+            </div><h3>Виртуальная реальность</h3></a></li>
+          <li><a href="catalog.html">
+            <div class="popular-picture">
+              <div class="picture-logo picture-2"></div>
+            </div><h3>Моноподы для селфи</h3></a></li>
+          <li><a href="#">
+            <div class="popular-picture">
+              <div class="picture-logo picture-3"></div>
+            </div><h3>Экшн-камеры</h3></a></li>
+          <li><a href="#">
+            <div class="popular-picture">
+              <div class="picture-logo picture-4"></div>
+            </div><h3>Фитнесс браслеты</h3></a></li>
+          <li><a href="#">
+            <div class="popular-picture">
+              <div class="picture-logo picture-5"></div>
+            </div><h3>Умные часы</h3></a></li>
+          <li><a href="#">
+            <div class="popular-picture">
+              <div class="picture-logo picture-6"></div>
+            </div><h3>Квадрокоптеры</h3></a></li>
         </ul>
       </div>
       </section>
-
+      <section class="services services-delivery">
+        <div class="container">
+        <div class="services-menu">
+          <ul>
+            <li class="services-active"><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Кредит</a></li>
+          </ul>
+        </div>
+        <div class="services-text">
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его не ваш этаж.</p>
+        </div>
+      </div>
+      </section>
+      <section class="services services-warranty">
+        <div class="container">
+        <div class="services-menu">
+          <ul>
+            <li><a href="#">Доставка</a></li>
+            <li class="services-active"><a href="#">Гарантия</a></li>
+            <li><a href="#">Кредит</a></li>
+          </ul>
+        </div>
+        <div class="services-text">
+          <h2>Гарантия</h2>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+        </div>
+      </div>
+      </section>
       <section class="services services-credit">
         <div class="container">
 
@@ -134,24 +248,23 @@
           <ul>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
-            <li class="active"><a href="#">Кредит</a></li>
+            <li class="services-active"><a href="#">Кредит</a></li>
           </ul>
         </div>
         <div class="services-text">
           <h2>Кредит</h2>
           <p>Залезть в долговую яму стало проще! Кредитные консультатнты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
-        <!--  ЕЩЕ 2 СЕРВИСА -->
       </div>
       </section>
 
       <section class="brands">
         <div class="container">
 
-        <a href="#"><img src="#" alt="dji"></a>
-        <a href="#"><img src="#" alt="spgadjets"></a>
-        <a href="#"><img src="#" alt="gopro"></a>
-        <a href="#"><img src="#" alt="vive"></a>
+        <a href="#"><img src="img/dji_hvr.png" width="260" height="100" alt="dji"></a>
+        <a href="#"><img src="img/spgadjets_hvr.png" width="260" height="100" alt="spgadjets"></a>
+        <a href="#"><img src="img/gopro_hvr.png" width="260" height="100" alt="gopro"></a>
+        <a href="#"><img src="img/vive_hvr.png" width="260" height="100" alt="vive"></a>
       </div>
       </section>
 
@@ -184,10 +297,10 @@
         <div class="top-footer">
           <h2 class="logo"><a class="logo-footer" href="index.html">Device</a></h2>
           <ul class="footer-user-block">
-          <li><a class="login" href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
+            <li><a class="login-footer" href="#"><span>Войти</span></a></li>
+            <li><a class="compare-footer" href="#"><span>Сравнить</span></a></li>
+            <li><a class="basket-footer" href="#"><span>Корзина</span></a></li>
+          </ul>
         </div>
 
         <div class="middle-footer">
@@ -196,6 +309,7 @@
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
+
           </ul>
           <div class="phone"><span>Тел.: +7 (495) 495-95-95</span></div>
 
