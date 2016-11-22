@@ -23,13 +23,11 @@
           <form action="#" method="get">
 
             <input type="search" class="search-input" name="search" id="search" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
             <label for="search" class="search-label"></label>
 
-            <!-- эту кнопку норм спаном? и потом прятать дисплей-блоком? -->
-            <button type="submit">Найти</button>
           </form>
         </li>
-        <!-- мелкие картинки (лупа, корзина ипр) — иконочным шрифтом, псевдоэлементами? -->
         <li class="user-block">
           <a class="login" href="#">Войти</a>
         </li>
@@ -288,6 +286,14 @@
           <a class="map" href="#"><img src="img/map.png" width="560" height="224" alt="map"></a>
           <a class="btn btn-write" href="#">Напишите нам</a>
         </div>
+
+        <section class="modal-content-map">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <!-- <div id="google-map"></div> -->
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779953!2d37.52742931623128!3d55.68703098053586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1479758849262" width="960" height="560" style="border:0" allowfullscreen></iframe>
+        </section>
+
       </div>
       </section>
 
@@ -328,6 +334,31 @@
         </div>
       </div>
     </footer>
+
+
+
+    <section class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <form class="login-form" action="#" method="post">
+        <label>
+          <span>Ваше имя:</span>
+          <input class="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста" required="">
+        </label>
+        <label>
+          <span>Ваш e-mail:</span>
+          <input class="user-mail" type="text" name="mail" placeholder="Для отправки ответа" required="">
+        </label>
+        <label>
+          <span>Текст письма:</span>
+          <textarea name="mail-text" placeholder="В свободной форме" required></textarea>
+        </label>
+        <button class="modal-content-button" type="submit">Отправить</button>
+    </form>
+  </section>
+
+
+
+  <script src="js/js.js"></script>
 
   </body>
 </html>
