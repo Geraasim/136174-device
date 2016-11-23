@@ -476,7 +476,7 @@ header a {
   left: -10px;
 
   content: "";
-  /*display: block;*/
+  display: block;
   /*border-bottom: 2px solid #000000;*/
   background-color: #000000;
   width: 1440px;
@@ -521,7 +521,7 @@ button:active ~ .search-label.search-label::after {
   top: 50px;
   left: 0;
   content: "";
-  display: none;
+  /*display: none;*/
   background-color: #000000;
   width: 440px;
   height: 2px;
