@@ -17,44 +17,44 @@ body {
 }
 
 @font-face {
-  /*font-weight: normal;*/
-  /*font-style: normal;*/
+  font-weight: normal;
+  font-style: normal;
 
   font-family: "Gilroy";
-  src: url("../fonts/gilroyextrabold.woff") format("woff"),
-       url("../fonts/gilroyextrabold.woff2") format("woff2");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
        /*url("../fonts/gilroylight.woff") format("woff"),*/
        /*url("../fonts/gilroylight.woff2") format("woff2");*/
 }
 
 @font-face {
-  /*font-weight: normal;*/
-  /*font-style: normal;*/
+  font-weight: normal;
+  font-style: normal;
 
   font-family: "Gilroy Light";
-  src: url("../fonts/gilroylight.woff") format("woff"),
-       url("../fonts/gilroylight.woff2") format("woff2");
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
 }
 
 
 @font-face {
-  /*font-weight: normal;*/
-  /*font-style: normal;*/
+  font-weight: normal;
+  font-style: normal;
 
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"),
-       url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
        /*url("../fonts/opensanslight.woff") format("woff"),*/
        /*url("../fonts/opensanslight.woff2") format("woff2");*/
 }
 
 @font-face {
-  /*font-weight: normal;*/
-  /*font-style: normal;*/
+  font-weight: normal;
+  font-style: normal;
 
   font-family: "Open Sans Light";
-  src: url("../fonts/opensanslight.woff") format("woff"),
-       url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
 }
 
 
@@ -387,26 +387,26 @@ header a {
 
 
 
-::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.3);}
-::-moz-placeholder          {color: rgba(0, 0, 0, 0.3);}/* Firefox 19+ */
-:-moz-placeholder           {color: rgba(0, 0, 0, 0.3);}/* Firefox 18- */
-:-ms-input-placeholder      {color: rgba(0, 0, 0, 0.3);}
+.search input::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.3);}
+.search input::-moz-placeholder          {color: rgba(0, 0, 0, 0.3);}/* Firefox 19+ */
+.search input:-moz-placeholder           {color: rgba(0, 0, 0, 0.3);}/* Firefox 18- */
+.search input:-ms-input-placeholder      {color: rgba(0, 0, 0, 0.3);}
 
 
-input:hover::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.6);}
-input:hover::-moz-placeholder          {color: rgba(0, 0, 0, 0.6);}/* Firefox 19+ */
-input:hover:-moz-placeholder           {color: rgba(0, 0, 0, 0.6);}/* Firefox 18- */
-input:hover:-ms-input-placeholder      {color: rgba(0, 0, 0, 0.6);}
+.search input:hover::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.6);}
+.search input:hover::-moz-placeholder          {color: rgba(0, 0, 0, 0.6);}/* Firefox 19+ */
+.search input:hover:-moz-placeholder           {color: rgba(0, 0, 0, 0.6);}/* Firefox 18- */
+.search input:hover:-ms-input-placeholder      {color: rgba(0, 0, 0, 0.6);}
 
-input:active::-webkit-input-placeholder {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}
-input:active::-moz-placeholder          {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}/* Firefox 19+ */
-input:active:-moz-placeholder           {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}/* Firefox 18- */
-input:active:-ms-input-placeholder      {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}
+.search input:active::-webkit-input-placeholder {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}
+.search input:active::-moz-placeholder          {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}/* Firefox 19+ */
+.search input:active:-moz-placeholder           {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}/* Firefox 18- */
+.search input:active:-ms-input-placeholder      {color: rgba(0, 0, 0, 1); background-color: #ffe27f;}
 
-input:focus::-webkit-input-placeholder {color: transparent; background-color: #ffe27f;}
-input:focus::-moz-placeholder          {color: transparent; background-color: #ffe27f;}/* Firefox 19+ */
-input:focus:-moz-placeholder           {color: transparent; background-color: #ffe27f;}/* Firefox 18- */
-input:focus:-ms-input-placeholder      {color: transparent; background-color: #ffe27f;}
+.search input:focus::-webkit-input-placeholder {color: transparent; background-color: #ffe27f;}
+.search input:focus::-moz-placeholder          {color: transparent; background-color: #ffe27f;}/* Firefox 19+ */
+.search input:focus:-moz-placeholder           {color: transparent; background-color: #ffe27f;}/* Firefox 18- */
+.search input:focus:-ms-input-placeholder      {color: transparent; background-color: #ffe27f;}
 
 .search button {
   border: 2px solid #000000;
@@ -2223,26 +2223,21 @@ input[type="checkbox"]:disabled + label::before {
 
 .modal-content {
   position: fixed;
-
-
   top: 50%;
   left: 50%;
-
   display: none;
   width: 960px;
   min-height: 550px;
   margin-left: -480px;
   margin-top: -275px;
-
-
-
   color: #000000;
   background-color: #fff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  z-index: 200;
+  /*z-index: 200;*/
 
-  /*overflow: hidden;*/
   z-index: 47;
+
+  outline: none;
 }
 
 .modal-content form {
@@ -2285,6 +2280,8 @@ input[type="checkbox"]:disabled + label::before {
 
   border: 2px solid #f2f2f2;
   box-sizing: border-box;
+
+  outline: none;
 }
 
 .modal-content input {
@@ -2314,12 +2311,23 @@ input[type="checkbox"]:disabled + label::before {
   background-color: #fff;
 }
 
-.modal-content input[type="required"],
-.modal-content textarea[type="required"] {
+
+.modal-content .error,
+.modal-content .error:hover,
+.modal-content .error:focus,
+.modal-content .error:active {
   background-color: #ffdada;
   border: 2px solid #ffdada;
   /*color: rgba(0, 0, 0, 1);*/
+  /*border-color: rgba(255, 218, 218, 1);*/
 }
+
+
+
+.error::-webkit-input-placeholder {background-color: rgba(255, 218, 218, 1);}
+.error::-moz-placeholder          {background-color: rgba(255, 218, 218, 1);}/* Firefox 19+ */
+.error:-moz-placeholder           {background-color: rgba(255, 218, 218, 1);}/* Firefox 18- */
+.error:-ms-input-placeholder      {background-color: rgba(255, 218, 218, 1);}
 
 
 .modal-content .modal-content-button {
@@ -2337,6 +2345,7 @@ input[type="checkbox"]:disabled + label::before {
   color: #000000;
   border: none;
   padding: 0;
+  outline: none;
 }
 
 .modal-content .modal-content-button:hover {
@@ -2402,6 +2411,7 @@ input[type="checkbox"]:disabled + label::before {
   opacity: 0.5;
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .modal-content-close:hover {
