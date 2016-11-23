@@ -5,45 +5,34 @@
     <title>HTML Academy: Девайс</title>
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
-
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
   </head>
   <body>
-
     <header>
-    <div class="container">
-      <div class="top-header">
-        <!-- абс позиционирование для лого -->
-        <h1 class="logo">Device</h1>
-        <ul>
-
-        <li class="search">
-          <form class="search-form" action="#" method="get">
-
-            <input type="search" class="search-input" name="search" id="search" placeholder="Поиск по сайту">
-            <button type="submit">Найти</button>
-            <!-- <label for="search" class="search-label"></label> -->
-
-          </form>
-        </li>
-        <li class="user-block">
-          <a class="login" href="#">Войти</a>
-        </li>
-
-        <li class="compare">
-          <a href="#">Сравнить</a>
-        </li>
-
-        <li class="basket">
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-      </div>
-
-    <div class="main-header">
-
+      <div class="container">
+        <div class="top-header">
+          <h1 class="logo">Device</h1>
+          <ul>
+            <li class="search">
+              <form class="search-form" action="#" method="get">
+                <input type="search" class="search-input" name="search" id="search" placeholder="Поиск по сайту">
+                <button type="submit">Найти</button>
+                <label for="search" class="search-label"></label>
+              </form>
+            </li>
+            <li class="user-block">
+              <a class="login" href="#">Войти</a>
+            </li>
+            <li class="compare">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="basket">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-header">
         <!-- <div class="main-menu"> -->
           <nav>
             <ul class="main-menu">
@@ -64,23 +53,18 @@
             </ul>
           </nav>
       <!-- </div> -->
+      </div>
     </div>
-
-  </div>
   </header>
-
     <main>
       <section class="slider slider-1">
         <div class="container">
-
-        <div class="slider-picture">
+          <div class="slider-picture">
           <img src="img/slider-1.png" width="384" height="486" alt="selfie-stick">
         </div>
-        <div class="slider-text">
+          <div class="slider-text">
           <div class="slider-number">01
-            <!-- забыла, тут нужен спан для 01? a черточку можно сделать псевдоэлементом вроде?  -->
           </div>
-          <!-- если у логотипа внизу h2, то у всех заголовков на странице уже надо использовать h3? или норм h2?  -->
           <h2>Делай селфи,<br> как Бен Стиллер!</h2>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <div class="more">
@@ -105,11 +89,11 @@
               <span class="details-parameter">Материал</span>
             </li>
           </ul>
-          </div>
+        </div>
         </div>
       </section>
       <section class="slider slider-2">
-        <div class="container">
+      <div class="container">
         <div class="slider-picture">
           <img src="img/slider-2.png" width="345" height="485" alt="fitness-bracelet">
         </div>
@@ -131,26 +115,17 @@
               <span class="details-value">48 часов</span>
               <span class="details-parameter">Без подзарядки</span>
             </li>
-            <!-- <li> -->
-              <!-- <span class="details-value"></span> -->
-              <!-- <span class="details-parameter"></span> -->
-            <!-- </li> -->
-            <!-- <li> -->
-              <!-- <span class="details-value">Карбон</span> -->
-              <!-- <span class="details-parameter">Материал</span> -->
-            <!-- </li> -->
           </ul>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
       <section class="slider slider-3">
         <div class="container">
-
-        <div class="slider-picture">
-          <img src="img/slider-3.png" width="526" height="334" alt="quadrocopter">
-        </div>
-        <div class="slider-text">
-          <div class="slider-number">03
+          <div class="slider-picture">
+            <img src="img/slider-3.png" width="526" height="334" alt="quadrocopter">
+          </div>
+          <div class="slider-text">
+            <div class="slider-number">03
           </div>
           <h2>Порхает как бабочка,<br>жалит как пчела!</h2>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -171,46 +146,54 @@
               <span class="details-value">50 м</span>
               <span class="details-parameter">Радиус поражения</span>
             </li>
-            <!-- <li> -->
-              <!-- <span class="details-value">Карбон</span> -->
-              <!-- <span class="details-parameter">Материал</span> -->
-            <!-- </li> -->
           </ul>
-          </div>
         </div>
+      </div>
       </section>
       <section class="popular">
-        <div class="container">
+      <div class="container">
         <ul>
           <li><a href="#">
             <div class="popular-picture">
               <div class="picture-logo picture-1"></div>
-            </div><h3>Виртуальная реальность</h3></a></li>
+            </div>
+            <h3>Виртуальная реальность</h3>
+          </a></li>
           <li><a href="catalog.html">
             <div class="popular-picture">
               <div class="picture-logo picture-2"></div>
-            </div><h3>Моноподы для селфи</h3></a></li>
+            </div>
+            <h3>Моноподы для селфи</h3>
+          </a></li>
           <li><a href="#">
             <div class="popular-picture">
               <div class="picture-logo picture-3"></div>
-            </div><h3>Экшн-камеры</h3></a></li>
+            </div>
+            <h3>Экшн-камеры</h3>
+          </a></li>
           <li><a href="#">
             <div class="popular-picture">
               <div class="picture-logo picture-4"></div>
-            </div><h3>Фитнесс браслеты</h3></a></li>
+            </div>
+            <h3>Фитнесс браслеты</h3>
+          </a></li>
           <li><a href="#">
             <div class="popular-picture">
               <div class="picture-logo picture-5"></div>
-            </div><h3>Умные часы</h3></a></li>
+            </div>
+            <h3>Умные часы</h3>
+          </a></li>
           <li><a href="#">
             <div class="popular-picture">
               <div class="picture-logo picture-6"></div>
-            </div><h3>Квадрокоптеры</h3></a></li>
+            </div>
+            <h3>Квадрокоптеры</h3>
+          </a></li>
         </ul>
       </div>
-      </section>
+    </section>
       <section class="services services-delivery">
-        <div class="container">
+      <div class="container">
         <div class="services-menu">
           <ul>
             <li class="services-active"><a href="#">Доставка</a></li>
@@ -223,9 +206,9 @@
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его не ваш этаж.</p>
         </div>
       </div>
-      </section>
+    </section>
       <section class="services services-warranty">
-        <div class="container">
+      <div class="container">
         <div class="services-menu">
           <ul>
             <li><a href="#">Доставка</a></li>
@@ -238,10 +221,9 @@
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
         </div>
       </div>
-      </section>
+    </section>
       <section class="services services-credit">
-        <div class="container">
-
+      <div class="container">
         <div class="services-menu">
           <ul>
             <li><a href="#">Доставка</a></li>
@@ -254,21 +236,17 @@
           <p>Залезть в долговую яму стало проще! Кредитные консультатнты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
       </div>
-      </section>
-
+    </section>
       <section class="brands">
-        <div class="container">
-
+      <div class="container">
         <a href="#"><img src="img/dji_hvr.png" width="260" height="100" alt="dji"></a>
         <a href="#"><img src="img/spgadjets_hvr.png" width="260" height="100" alt="spgadjets"></a>
         <a href="#"><img src="img/gopro_hvr.png" width="260" height="100" alt="gopro"></a>
         <a href="#"><img src="img/vive_hvr.png" width="260" height="100" alt="vive"></a>
       </div>
-      </section>
-
+    </section>
       <section class="info">
-        <div class="container">
-
+      <div class="container">
         <div class="about">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -286,79 +264,65 @@
           <a class="map" href="#"><img src="img/map.png" width="560" height="224" alt="map"></a>
           <a class="btn btn-write" href="#">Напишите нам</a>
         </div>
-
-        <section class="modal-content-map">
-          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-          <!-- <div id="google-map"></div> -->
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779953!2d37.52742931623128!3d55.68703098053586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1479758849262" width="960" height="560" style="border:0" allowfullscreen></iframe>
-        </section>
-
-      </div>
+      <section class="modal-content-map">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <!-- <div id="google-map"></div> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779953!2d37.52742931623128!3d55.68703098053586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1479758849262" width="960" height="560" style="border:0" allowfullscreen></iframe>
       </section>
-
+      </div>
+    </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="top-footer">
-          <h2 class="logo"><a class="logo-footer" href="index.html">Device</a></h2>
-          <ul class="footer-user-block">
-            <li><a class="login-footer" href="#"><span>Войти</span></a></li>
-            <li><a class="compare-footer" href="#"><span>Сравнить</span></a></li>
-            <li><a class="basket-footer" href="#"><span>Корзина</span></a></li>
-          </ul>
+    <div class="container">
+      <div class="top-footer">
+        <h2 class="logo"><a class="logo-footer" href="index.html">Device</a></h2>
+        <ul class="footer-user-block">
+          <li><a class="login-footer" href="#"><span>Войти</span></a></li>
+          <li><a class="compare-footer" href="#"><span>Сравнить</span></a></li>
+          <li><a class="basket-footer" href="#"><span>Корзина</span></a></li>
+        </ul>
+      </div>
+      <div class="middle-footer">
+        <div class="address"><span>г. Москва, ул. Строителей, 15</span></div>
+        <ul class="footer-menu">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="phone"><span>Тел.: +7 (495) 495-95-95</span></div>
+      </div>
+      <div class="bottom-footer">
+        <div class="dash"></div>
+        <div class="social">
+          <a class="social-facebook" href="#"></a>
+          <a class="social-instagram" href="#"></a>
+          <a class="social-twitter" href="#"></a>
         </div>
-
-        <div class="middle-footer">
-          <div class="address"><span>г. Москва, ул. Строителей, 15</span></div>
-          <ul class="footer-menu">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-
-          </ul>
-          <div class="phone"><span>Тел.: +7 (495) 495-95-95</span></div>
-
-        </div>
-
-        <div class="bottom-footer">
-          <div class="dash"></div>
-          <div class="social">
-            <a class="social-facebook" href="#"></a>
-            <a class="social-instagram" href="#"></a>
-            <a class="social-twitter" href="#"></a>
-          </div>
-          <div class="design-logo">
-            <a href="https://htmlacademy.ru"></a>
-          </div>
+        <div class="design-logo">
+          <a href="https://htmlacademy.ru"></a>
         </div>
       </div>
-    </footer>
-
-
-
+    </div>
+  </footer>
     <section class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <form class="login-form" action="#" method="post">
-        <label>
-          <span>Ваше имя:</span>
-          <input class="user-name error" type="text" name="name" placeholder="Представьтесь, пожалуйста" required="">
-        </label>
-        <label>
-          <span>Ваш e-mail:</span>
-          <input class="user-mail" type="text" name="mail" placeholder="Для отправки ответа" required="">
-        </label>
-        <label>
-          <span>Текст письма:</span>
-          <textarea name="mail-text" placeholder="В свободной форме" required></textarea>
-        </label>
-        <button class="modal-content-button" type="submit">Отправить</button>
+      <label>
+        <span>Ваше имя:</span>
+        <input class="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста" required="">
+      </label>
+      <label>
+        <span>Ваш e-mail:</span>
+        <input class="user-mail" type="text" name="mail" placeholder="Для отправки ответа" required="">
+      </label>
+      <label>
+        <span>Текст письма:</span>
+        <textarea name="mail-text" placeholder="В свободной форме" required></textarea>
+      </label>
+      <button class="modal-content-button" type="submit">Отправить</button>
     </form>
   </section>
-
-
-  <div class="modal-overlay"></div>
-  <script src="js/js.js"></script>
-
+    <div class="modal-overlay"></div>
+    <script src="js/js.js"></script>
   </body>
 </html>
