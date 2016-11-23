@@ -476,7 +476,7 @@ header a {
   left: -10px;
 
   content: "";
-  display: block;
+  /*display: block;*/
   /*border-bottom: 2px solid #000000;*/
   background-color: #000000;
   width: 1440px;
