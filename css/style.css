@@ -317,13 +317,18 @@ header a {
   opacity: 0.3;
 }
 
-
+.search form {
+  position: relative;
+}
 .search form::before {
+  position: absolute;
+  top: 20px;
+  left: 0;
   content: "";
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   display: inline-flex;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
   width: 16px;
   height: 16px;
   background-position: -5px -1091px;
@@ -333,10 +338,11 @@ header a {
   background-color: inherit;
   color: rgba(0, 0, 0, 0.3);
   border: 0;
-  min-width: 311px;
+  width: 347px;
   padding: 0;
   height: 52px;
-  position: relative;
+  padding-left: 36px;
+  /*position: relative;*/
 }
 
 .search input:hover {
@@ -378,6 +384,9 @@ header a {
   box-sizing: border-box;
   outline: none;
   padding: 0;
+  /*padding-left: 20px;*/
+  text-align: center;
+
   display: none;
   /*visibility: hidden;*/
 }
@@ -385,13 +394,18 @@ header a {
 .search button:hover {
   background-color: #000000;
   color: #ffffff;
+  /*visibility: visible;*/
 }
 
 .search button:active {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
-  display: inline-block;
   /*display: inline-flex;*/
+  text-align: center;
+  /*padding-left: 20px;*/
+  display: inline-block;
+  vertical-align: top;
+  /*visibility: visible;*/
 }
 
 .search .search-input:focus {
@@ -418,10 +432,17 @@ header a {
 
 .search-input:focus ~ button {
   display: inline-block;
+  vertical-align: top;
+
+  /*display: inline-flex;*/
+
+  /*visibility: visible;*/
+
 }
 
 /*.search-input:focus ~ button:active {
   display: inline-block;
+  vertical-align: top;
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
 }*/
@@ -446,8 +467,8 @@ header a {
 
 .search-label::after {
   position: absolute;
-  top: -2px;
-  left: 0;
+  top: 34px;
+  left: -440px;
   content: "";
   display: none;
   /*border-bottom: 2px solid #000000;*/
@@ -596,7 +617,6 @@ button:active ~ .search-input {
   margin: 0;
   background: none;
   border: none;
-  outline: none;
 }
 
 .range-controls {
@@ -1355,6 +1375,12 @@ li:active .picture-logo {
 .map {
   display: block;
   margin-top: 40px;
+  background: #eee url("../img/map.png") no-repeat;
+
+  width: 560px;
+  height: 222px;
+  box-sizing: border-box;
+
 }
 
 footer {
